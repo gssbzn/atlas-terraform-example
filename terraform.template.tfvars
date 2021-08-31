@@ -1,4 +1,4 @@
-org_id        = "5e429e7706822c6eac4d5970"
+org_id        = ""
 project_name  = "TF Demo"
 cluster_name  = "TFCluster"
 ip_address    = ""
