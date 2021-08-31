@@ -7,3 +7,6 @@ output "ipaccesslist" {
 output "connection_strings" {
   value = mongodbatlas_cluster.cluster.connection_strings[0].standard_srv
 }
+output "testcluster_name" {
+  value = data.mongodbatlas_cluster.test.name
+}

@@ -1,3 +1,4 @@
+# clusters
 variable "cluster_name" {
   type        = string
   description = "The MongoDB Atlas Cluster Name"
@@ -25,4 +26,18 @@ variable "instance_size_name" {
 variable "cluster_name2" {
   type        = string
   description = "The MongoDB Atlas Cluster Name"
+}
+# access lists
+variable "ip_address" {
+  type        = string
+  description = "The IP address that the cluster will be accessed from, can also be a CIDR range or AWS security group"
+}
+# project
+variable "org_id" {
+  type        = string
+  description = "MongoDB Organization ID"
+}
+variable "project_name" {
+  type        = string
+  description = "The MongoDB Atlas Project Name"
 }

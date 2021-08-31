@@ -18,8 +18,3 @@ resource "mongodbatlas_cluster" "cluster" {
   provider_name                = var.cloud_provider
   provider_instance_size_name  = var.instance_size_name
 }
-
-data "mongodbatlas_cluster" "cluster" {
-  project_id = mongodbatlas_project.project.id
-  name       = mongodbatlas_cluster.cluster.name
-}
